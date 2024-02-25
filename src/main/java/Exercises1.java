@@ -42,6 +42,7 @@ public class Exercises1 {
     public char[][] generateTriangle(int rows){
         char[][] shape = new char[rows][];
         for (int i = 0; i < rows; i++){
+            shape[i] = new char[i+1];
             for (int j = 0; j < i+1; j++){
                 shape[i][j] = '*';
             }
